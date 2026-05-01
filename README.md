@@ -4,6 +4,7 @@ A single repository for my React and MERN practice projects.
 
 ## Projects
 
+- `assignment-5-usefetch` - a React custom hook project for reusable API fetching.
 - `bg-changer` - a simple background color changer built with React and Vite.
 - `password-generator` - a React app for generating customizable passwords.
 - `ev-website` - a React landing page project for an EV-themed website.
