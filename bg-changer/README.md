@@ -1,12 +1,64 @@
-# React + Vite
+# BG Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React practice project that changes the full-page background color with a set of preset buttons.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app is a simple state-management exercise built with React and Vite. A single `useState` value controls the page background, and clicking a color button updates the whole screen instantly.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Full-screen background color switching
+- Preset color palette with quick action buttons
+- Floating control bar fixed near the bottom of the page
+- Utility-first styling with Tailwind CSS classes
+- Fast development workflow with Vite
+
+## Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- ESLint
+
+## Project Structure
+
+```text
+bg-changer/
+  src/
+    App.jsx
+    main.jsx
+  public/
+  package.json
+```
+
+## How It Works
+
+- The current background color is stored in React state.
+- Each button calls `setColor(...)` with a different preset value.
+- The selected color is applied inline to the main full-screen wrapper.
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local Vite URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+- `npm run dev` - start the development server
+- `npm run build` - create a production build
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run ESLint
+
+## Learning Focus
+
+This project is useful for practicing:
+
+- `useState`
+- event handling in React
+- dynamic inline styles
+- basic UI layout with Tailwind CSS

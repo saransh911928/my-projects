@@ -1,18 +1,69 @@
-# React + Vite
+# Brand Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React landing page for a shoe brand with a clean hero layout, call-to-action buttons, and marketplace branding.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a UI-focused practice build. It recreates a marketing-style landing page with a navigation bar, a bold headline, product imagery, and quick shopping actions.
 
-## React Compiler
+## Features
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- Header navigation with logo, menu links, and login button
+- Hero section with strong product-focused headline
+- Primary and secondary call-to-action buttons
+- Marketplace icons for Amazon and Flipkart
+- Product image section for a catalog-style landing page
 
-Note: This will impact Vite dev & build performances.
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- CSS
+- ESLint
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+```text
+brand-page/
+  public/
+    images/
+  src/
+    Components/
+      Hero.jsx
+      Navigation.jsx
+    App.jsx
+    App.css
+    main.jsx
+  package.json
+```
+
+## Component Breakdown
+
+- `Navigation.jsx` renders the logo, menu items, and login button
+- `Hero.jsx` renders the headline, description, action buttons, and shopping platform logos
+- `public/images` stores the static branding and product assets used by the page
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local Vite URL shown in the terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+- `npm run dev` - start the development server
+- `npm run build` - create a production build
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run ESLint
+
+## Project Goal
+
+This project is best viewed as a front-end layout exercise for practicing:
+
+- component-based page structure
+- static landing page composition
+- asset handling in `public/`
+- CTA-first UI design
