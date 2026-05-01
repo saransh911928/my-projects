@@ -1,0 +1,40 @@
+
+services:
+  mongo:
+    image: mongo:5.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - mern-network
+
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/netflix
+      - PORT=4000
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - mongo
+    networks:
+      - mern-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - mern-network
+
+volumes:
+  mongo_data:
+
+networks:
+  mern-network:
+    driver: bridge

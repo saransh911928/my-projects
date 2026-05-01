@@ -1,24 +1,23 @@
-# Assignment 5 – React Custom Hooks (useFetch)
+# React Projects
 
-This project demonstrates a custom React hook called `useFetch` that simplifies API data fetching.
+A single repository for my React and MERN practice projects.
 
-## 🔗 Live Demo
-https://6906026df0e1eb2e845a675e--serene-donut-7b4faa.netlify.app/
+## Projects
 
-## 📂 GitHub Repository
-https://github.com/saransh911928/assignment-5-usefetch
+- `bg-changer` - a simple background color changer built with React and Vite.
+- `password-generator` - a React app for generating customizable passwords.
+- `ev-website` - a React landing page project for an EV-themed website.
+- `brand-page` - a small React brand page UI project.
+- `mern-project` - a MERN practice app with separate frontend and backend folders.
+- `netflix` - a full-stack Netflix-style project with client, API, and admin apps.
 
-## 📌 Features
-- Custom React Hook (`useFetch`)
-- Handles loading, error, and data states
-- Uses `useState`, `useEffect`, and `useCallback`
-- Fetches data from a public API
-- Responsive UI with loading spinner
+## Run a Project
 
-## 🧠 API Used
-https://api.escuelajs.co/api/v1/products
+Open any project folder, install dependencies, and start it with the usual command for that app.
 
-## ▶️ How to Run Locally
 ```bash
 npm install
 npm run dev
+```
+
+For the MERN and Netflix projects, install dependencies inside each app folder you want to run.

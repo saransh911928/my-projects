@@ -1,0 +1,15 @@
+.placeholderPage {
+  flex: 4;
+  padding: 30px;
+}
+
+.placeholderTitle {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.placeholderMessage {
+  color: #444;
+  font-size: 16px;
+}
+
