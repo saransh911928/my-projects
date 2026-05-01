@@ -1,14 +1,12 @@
-# BG Changer
+# React + Vite
 
-A small React app that changes the page background with a simple UI.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Stack
+Currently, two official plugins are available:
 
-React, Vite, and Tailwind CSS.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Run
+## Expanding the ESLint configuration
 
-```bash
-npm install
-npm run dev
-```
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://vitejs.dev/guide/#scaffolding-your-first-vite-project) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
